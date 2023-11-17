@@ -16,6 +16,7 @@ const Library = () => {
         if(!user) {
             return authModal.onOpen()
         }
+
         return uploadModal.onOpen()
     }
   return (

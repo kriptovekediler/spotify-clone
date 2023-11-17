@@ -27,7 +27,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <ToasterProvider/>
+        <ToasterProvider>
         <SupabaseProvider>
           <UserProvider>
             <ModalProvider/>
@@ -36,6 +36,7 @@ export default async function RootLayout({
             </Sidebar>
           </UserProvider>
         </SupabaseProvider>
+        </ToasterProvider>
       </body>
     </html>
   )
