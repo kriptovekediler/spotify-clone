@@ -24,7 +24,6 @@ const LikeButton:React.FC<LikeButtonProps> = ({songId}) => {
         if(!user?.id) {
             return
         }
-
         const fetchData = async() => {
             const {data, error} = await supabaseClient
             .from('liked_songs')
